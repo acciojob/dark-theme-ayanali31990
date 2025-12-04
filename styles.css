@@ -1,16 +1,38 @@
-#app{
-  height:90vh;
+#app {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
-.night{
+
+.day {
+  background-color: white;
+  color: black;
+}
+
+.night {
   background-color: black;
-  color:white;
+  color: white;
 }
 
-#swap{
-  outline:0;
+#swap {
+  outline: 0;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
 }
 
-.button_night{
-  background-color:blue;
-  color:white; 
+.button_day {
+  background-color: lightgray;
+  color: black;
+}
+
+.button_night {
+  background-color: blue;
+  color: white;
 }
